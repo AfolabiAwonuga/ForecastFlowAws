@@ -10,6 +10,11 @@ Description: Data ingestion for forecastflow
 #     Type: String
 #     Default: default value
 Resources:
+  DestinationBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: "forecast-flow-ingestion"
+        
   ForecastFlowFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -26,3 +31,8 @@ Resources:
       #       Ref: ApiKey
       #     API_HOST: 
       #       Ref: ApiHost
+      Policies:
+        - S3CrudPolicy:
+            BucketName: "forecast-flow-ingestion"
+  
+          
