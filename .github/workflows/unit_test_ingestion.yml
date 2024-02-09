@@ -29,4 +29,4 @@ jobs:
         cd 01_ingestion_pipeline
         pwd
         export PYTHONPATH='.'
-        python -m pytest 01_ingestion_pipeline/tests/unit/test_helper.py
+        python -m pytest tests/unit/test_helper.py
