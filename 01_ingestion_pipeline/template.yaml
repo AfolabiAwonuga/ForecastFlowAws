@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Data ingestion for forecastflow
+# for local testing
+# Parameters:
+#   ApiKey:
+#     Type: String
+#     Default: default value
+#   ApiHost:
+#     Type: String
+#     Default: default value
+Resources:
+  ForecastFlowFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: ForecastFlowIngestFunction
+      CodeUri: get_data/
+      Handler: get_data.lambda_handler
+      Runtime: python3.9
+      Architectures:
+      - x86_64
+      # for local testing 
+      # Environment:
+      #   Variables:
+      #     API_KEY: 
+      #       Ref: ApiKey
+      #     API_HOST: 
+      #       Ref: ApiHost

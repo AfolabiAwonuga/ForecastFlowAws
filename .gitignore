@@ -3,3 +3,6 @@ Pip*
 *ipynb
 .DS_Store
 get_data.py
+.aws-sam
+env_vars.json
+__pycache__
