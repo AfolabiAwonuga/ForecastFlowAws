@@ -25,5 +25,4 @@ jobs:
 
     - name: Run pytest
       run: |
-        export PYTHONPATH='.'
         python -m pytest 01_ingestion_pipeline/tests/unit/test_helper.py

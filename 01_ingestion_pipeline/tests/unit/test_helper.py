@@ -1,6 +1,6 @@
 # import sys
 # # sys.path.append('01_ingestion_pipeline/get_data')
-from get_data import get_data
+from ingest_function import get_data
 
 
 def test_flatten_helper():
