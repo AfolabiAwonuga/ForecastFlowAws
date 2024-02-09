@@ -1,4 +1,5 @@
 import os
+import time
 import json
 import boto3
 import logging
@@ -48,7 +49,8 @@ def lambda_handler(
     filename = f"{current_date}_{current_date - timedelta(days=5)}_dataset"
 
     processed = []
-    for i in range(730, 0, -1):
+    for i in range(365, 0, -1):
+        time.sleep(5)
         date_in_iteration = current_date - timedelta(days=i)
         querystring = {
             "date":date_in_iteration,

@@ -34,5 +34,10 @@ Resources:
       Policies:
         - S3CrudPolicy:
             BucketName: "forecast-flow-ingestion-main"
+      # Events:
+      #   DailySchedule:
+      #     Type: Schedule
+      #     Properties:
+      #       Schedule: '@daily'
   
           
