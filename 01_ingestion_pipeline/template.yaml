@@ -13,8 +13,8 @@ Resources:
   DestinationBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: "forecast-flow-ingestion"
-        
+        BucketName: "forecast-flow-ingestion-main"
+
   ForecastFlowFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -33,6 +33,6 @@ Resources:
       #       Ref: ApiHost
       Policies:
         - S3CrudPolicy:
-            BucketName: "forecast-flow-ingestion"
+            BucketName: "forecast-flow-ingestion-main"
   
           
