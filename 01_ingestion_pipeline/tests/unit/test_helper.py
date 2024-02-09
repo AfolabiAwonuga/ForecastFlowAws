@@ -1,5 +1,5 @@
-import sys
-sys.path.append('01_ingestion_pipeline/get_data')
+# import sys
+# # sys.path.append('01_ingestion_pipeline/get_data')
 from get_data import get_data
 
 

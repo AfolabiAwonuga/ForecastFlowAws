@@ -2,7 +2,7 @@ name: Deploy and Invoke ForecastFlowIngestFunction
 on:
   push:
     branches:
-      - dev
+      - main
 
 permissions:
   id-token: write
