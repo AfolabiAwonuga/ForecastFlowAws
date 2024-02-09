@@ -43,7 +43,7 @@ def lambda_handler(
             "X-RapidAPI-Key": KEY,
             "X-RapidAPI-Host": HOST
         }
-    bucket = "forecast-flow-ingestion"
+    bucket = "forecast-flow-ingestion-main"
     current_date = datetime.now().date()
     filename = f"{current_date}_{current_date - timedelta(days=5)}_dataset"
 
