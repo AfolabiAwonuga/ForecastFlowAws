@@ -1,9 +1,6 @@
-import os
-import json
+import sys
+sys.path.append('01_ingestion_pipeline/get_data')
 from get_data import get_data
-from dotenv import load_dotenv
-
-load_dotenv()
 
 
 def test_flatten_helper():

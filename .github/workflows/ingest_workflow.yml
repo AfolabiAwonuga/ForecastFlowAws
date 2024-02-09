@@ -33,6 +33,7 @@ jobs:
 
       - name: Build and Deploy SAM App
         run: |
+          cd 01_ingestion_pipeline
           sam build
           sam deploy
 
