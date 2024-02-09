@@ -48,7 +48,7 @@ def lambda_handler(
     filename = f"{current_date}_{current_date - timedelta(days=5)}_dataset"
 
     processed = []
-    for i in range(1, 0, -1):
+    for i in range(730, 0, -1):
         date_in_iteration = current_date - timedelta(days=i)
         querystring = {
             "date":date_in_iteration,
