@@ -1,0 +1,5 @@
+Pip*
+.env
+*ipynb
+.DS_Store
+get_data.py
