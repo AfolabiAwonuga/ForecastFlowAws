@@ -1,5 +1,3 @@
-# import sys
-# # sys.path.append('01_ingestion_pipeline/get_data')
 from ingest_function import get_data
 
 

@@ -21,12 +21,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r 01_ingestion_pipeline/ingest_function/requirements.txt  
+        pip install -r 01_ingestion_pipeline/01_ingestion_pipeline/requirements.txt  
 
     - name: Run pytest
       run: |
-        pwd
-        cd 01_ingestion_pipeline
-        pwd
-        export PYTHONPATH='.'
-        python -m pytest tests/unit/test_helper.py
+        python -m pytest 01_ingestion_pipeline/tests/unit/test_helper.py

@@ -2,7 +2,7 @@ Pip*
 .env
 *ipynb
 .DS_Store
-get_data.py
 .aws-sam
 env_vars.json
 __pycache__
+.pytest_cache
