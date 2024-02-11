@@ -10,13 +10,19 @@ Description: Data ingestion for forecastflow
 #     Type: String
 #     Default: default value
 Resources:
+  DestinationBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: "forecast-flow-ingestion-main"
+
   ForecastFlowFunction:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: ForecastFlowIngestFunction
-      CodeUri: get_data/
+      CodeUri: ingest_function/
       Handler: get_data.lambda_handler
       Runtime: python3.9
+      Timeout: 600
       Architectures:
       - x86_64
       # for local testing 
@@ -26,3 +32,13 @@ Resources:
       #       Ref: ApiKey
       #     API_HOST: 
       #       Ref: ApiHost
+      Policies:
+        - S3CrudPolicy:
+            BucketName: "forecast-flow-ingestion-main"
+      # Events:
+      #   DailySchedule:
+      #     Type: Schedule
+      #     Properties:
+      #       Schedule: '@daily'
+  
+          

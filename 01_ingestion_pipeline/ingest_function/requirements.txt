@@ -1,0 +1,7 @@
+requests
+boto3
+pytest
+pytest-cov
+black 
+isort 
+make
