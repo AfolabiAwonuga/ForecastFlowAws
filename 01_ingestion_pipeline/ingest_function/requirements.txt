@@ -1,7 +1,7 @@
 requests
 boto3
 pytest
-python-cov
+pytest-cov
 black 
 isort 
 make
