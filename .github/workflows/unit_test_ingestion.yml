@@ -23,6 +23,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r 01_ingestion_pipeline/ingest_function/requirements.txt  
 
-    - name: Run pytest
+    - name: Run Checks
       run: |
-        python -m pytest 01_ingestion_pipeline/tests/unit/test_helper.py
+        python -m make run

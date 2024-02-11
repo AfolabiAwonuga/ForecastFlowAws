@@ -7,3 +7,4 @@ env_vars.json
 __pycache__
 .pytest_cache
 stdout.json
+.coverage
