@@ -25,4 +25,4 @@ jobs:
 
     - name: Run Checks
       run: |
-        python -m make run
+        make run

@@ -22,7 +22,7 @@ Resources:
       CodeUri: ingest_function/
       Handler: get_data.lambda_handler
       Runtime: python3.9
-      Timeout: 1800
+      Timeout: 600
       Architectures:
       - x86_64
       # for local testing 
