@@ -1,1 +1,12 @@
 .sagemaker-code-config
+Pip*
+.env
+*ipynb
+.DS_Store
+.aws-sam
+env_vars.json
+__pycache__
+.pytest_cache
+stdout.json
+.coverage
+README.md
